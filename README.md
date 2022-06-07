@@ -9,8 +9,8 @@ Derek Madderom
 
 Emma Coughlin
 
-Vue Lee
+* Vue Lee
 
 Anthony Pottebaum
 
-![GitHub Contributors Image](https://contrib.rocks/image?repo=Wizzle13/pokebook)
+
