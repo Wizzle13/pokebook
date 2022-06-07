@@ -1,8 +1,16 @@
 # pokebook
 
-## Description
 
-Social media site/blog centered around Pokemon
+Cameron Cole
 
-## Contributors
-- Vue Lee
+Derek Madderom
+
+* Chris Burton
+
+Emma Coughlin
+
+* Vue Lee
+
+Anthony Pottebaum
+
+
