@@ -7,7 +7,7 @@ Derek Madderom
 
 * Chris Burton
 
-Emma Coughlin
+* Emma Coughlin
 
 * Vue Lee
 
