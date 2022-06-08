@@ -1,7 +1,7 @@
 # pokebook
 
 
-Cameron Cole
+* Cameron Cole
 
 * Derek Madderom
 
@@ -13,7 +13,7 @@ Cameron Cole
 
 Anthony Pottebaum
 
-![GitHub Contributors Image](https://contrib.rocks/image?repo=wizzle13/pokebook)
+![GitHub Contributors Image](https://contrib.rocks/image?repo=Wizzle13/pokebook)
 
 
 
