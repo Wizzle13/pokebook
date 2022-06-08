@@ -7,7 +7,7 @@ Cameron Cole
 
 * Chris Burton
 
-Emma Coughlin
+* Emma Coughlin
 
 * Vue Lee
 
