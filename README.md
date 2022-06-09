@@ -1,7 +1,7 @@
 # pokebook
 
 
-Cameron Cole
+* Cameron Cole
 
 * Derek Madderom
 
