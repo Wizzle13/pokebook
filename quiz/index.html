@@ -9,34 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css">
 
-    <title>JS Quiz</title>
+    <title>Pok&#233mon Personality Quiz</title>
 </head>
 
 <body>
 
-    <div class="min-vh-100 d-flex align-items-center bg-dark">
+    <div class="min-vh-100 d-flex align-items-center bg-danger">
 
         <section class="w-100 row justify-content-center">
 
             <div class="col-10 col-md-6 col-lg-5">
 
-                <h1 class="display-3 text-center text-white">JavaScript Quiz</h1>
+                <h1 class="display-3 text-center text-white">Pok&#233mon Personality Quiz</h1>
 
-                <p id="subLine" class="text-center text-white"> Test Your Might</p>
+                <p id="subLine" class="text-center text-white">Which Pok&#233mon are you?</p>
 
                 <div class="bg-white my-4 p-4 rounded">
                     <!-- What the user sees on page load -->
                     <header>
-                        <p>
-                            TIMER: <span id="timerEl"></span>
-                        </p>
                     </header>
 
                     <div id="startScreen">
-                        <h2 class="font-weight-bold text-center mb-3">THIS IS A TIMED QUIZ</h2>
-                        <h3 class="text-center mb-3">Time is deducted for wrong answers.</h3>
-                        <h3 class="text-center mb-5">When you are prepared, Press Start.</h3>
-                        <button id="btn" class="btn-block btn-warning">Start</button>
+                        <h3 class="text-center mb-3">When you are prepared, Press Start.</h3>
+                        <button id="btn" class="btn-block btn-danger">Start</button>
                     </div>
 
                     <div id="quizContainer" class="hidden"></div>
@@ -48,14 +43,6 @@
                         <p class="hidden" id="initialsWarning">Too short</p>
                         <div id="currentScore"></div>
                     </div>
-
-                    <div class="bg-white my-4 p-4 rounded">
-                        <div class="font-weight-bold mb-3">
-                            High Scores:
-                        </div>
-                        <p style="text-transform: uppercase;" id="savedScores"></p>
-                    </div>
-                    
                 </div>
 
         </section>
