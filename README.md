@@ -1,9 +1,9 @@
 # pokebook
 
 
-Cameron Cole
+* Cameron Cole
 
-Derek Madderom
+* Derek Madderom
 
 * Chris Burton
 

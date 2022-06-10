@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS pokebook_db;
+
+CREATE DATABASE pokebook_db;
