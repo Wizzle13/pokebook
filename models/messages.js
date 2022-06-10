@@ -27,7 +27,7 @@ UserMessages.init(
       sequelize,
       freezeTableName: true,
       underscored: true,
-      modelName: 'user_Messages'
+      modelName: 'user_messages'
     }
   );
   
