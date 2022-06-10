@@ -3,7 +3,7 @@
 
 Cameron Cole
 
-Derek Madderom
+* Derek Madderom
 
 * Chris Burton
 
