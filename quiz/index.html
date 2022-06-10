@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <title>JS Quiz</title>
+</head>
+
+<body>
+
+    <div class="min-vh-100 d-flex align-items-center bg-dark">
+
+        <section class="w-100 row justify-content-center">
+
+            <div class="col-10 col-md-6 col-lg-5">
+
+                <h1 class="display-3 text-center text-white">JavaScript Quiz</h1>
+
+                <p id="subLine" class="text-center text-white"> Test Your Might</p>
+
+                <div class="bg-white my-4 p-4 rounded">
+                    <!-- What the user sees on page load -->
+                    <header>
+                        <p>
+                            TIMER: <span id="timerEl"></span>
+                        </p>
+                    </header>
+
+                    <div id="startScreen">
+                        <h2 class="font-weight-bold text-center mb-3">THIS IS A TIMED QUIZ</h2>
+                        <h3 class="text-center mb-3">Time is deducted for wrong answers.</h3>
+                        <h3 class="text-center mb-5">When you are prepared, Press Start.</h3>
+                        <button id="btn" class="btn-block btn-warning">Start</button>
+                    </div>
+
+                    <div id="quizContainer" class="hidden"></div>
+
+                    <div id="scoreSaver" class="hidden">
+                        <h2 class="text-center mb-3">Game Over</h2>
+                        <p>Please type your initials here:</p>
+                        <input type="text" style="text-transform: uppercase;" maxlength="2" id="initials"></input> <button class="btn-success rounded" id="initialsBtn">Submit</button>
+                        <p class="hidden" id="initialsWarning">Too short</p>
+                        <div id="currentScore"></div>
+                    </div>
+
+                    <div class="bg-white my-4 p-4 rounded">
+                        <div class="font-weight-bold mb-3">
+                            High Scores:
+                        </div>
+                        <p style="text-transform: uppercase;" id="savedScores"></p>
+                    </div>
+                    
+                </div>
+
+        </section>
+
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
