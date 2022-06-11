@@ -15,14 +15,14 @@ form {
     align-items: center;
 }
 
-.login {
+.login, .signup-form {
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#sign-name {
+#sign-name, #sign-email {
     padding: 10px;
     border-radius: 5px;
 }
