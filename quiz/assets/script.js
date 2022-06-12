@@ -8,33 +8,29 @@ const quizContainer = document.getElementById('quizContainer')
 //question incrementor
 let i = 0
 
+var count = 0
+
+userChoices = []
+
 //score holders
-var bug = 0
-var drag = 0
-var elct = 0
-var figt = 0
-var fire = 0
-var fly = 0
-var ghst = 0
-var grss = 0
-var grnd = 0
-var ice = 0
-var nrml = 0
-var posn = 0
-var psyc = 0
-var rock = 0
-var watr = 0
-var stel = 0
+var bug = 1
+var drag = 2
+var elct = 3
+var figt = 4
+var fire = 5
+var fly = 6
+var ghst = 7
+var grss = 8
+var grnd = 9
+var ice = 10
+var nrml = 11
+var posn = 12
+var psyc = 13
+var rock = 14
+var watr = 15
+var stel = 16
 
-
-//each question will have two type IDs
-//every answer will add a point to each of these IDs
-//at the end of the quiz, if there is 1 leading type, choose that type
-//if there are 2 types tied for the lead, choose dual type pokemon
-//if there are 3+ leaders, choose normal or fighting (extra question)
-
-//answers.id[] are ordered from most to least relevant in the array
-//most relevant is 4 points, least is 1
+//each question will correspond to 4 pokemon types.
 
 var question = new Array()
 
@@ -43,57 +39,115 @@ question[0] = new Array(
   new Array(
     "Tell everyone to spread out, while you go after the leader.",
     new Array(
-      "Water", "Dragon", "Steel", "Fighting"
+      watr, drag, stel, figt
     )
   ),
-  new Array (
+  new Array(
     "Focus on the closest enemy. Once you defeat them, you'll deal with the others.",
     new Array(
-      "Fire", "Electric", "Rock", "Flying"
+      fire, elct, rock, fly
     )
   ),
-  new Array (
+  new Array(
     "Use the confusion to slip out of sight. Use stealth to your advantage.",
     new Array(
-      "Ghost", "Poison", "Psych", "Ice"
+      ghst, posn, psyc, ice
     )
   ),
-  new Array (
+  new Array(
     "Group up and work together. They can't take you all at once.",
     new Array(
-      "Ground", "Grass", "Normal", "Bug"
+      grnd, grss, nrml, bug
+    )
+  )
+),
+  question[1] = new Array(
+    "Describe your perfect pokemon companion.",
+    new Array(
+      "Just so long as we're friends, that is all that matters.",
+      new Array(
+        bug, psyc, nrml, fly
+      )
+    ),
+    new Array(
+      "A good leader for the rest of the team would make the best companion.",
+      new Array(
+        drag, stel, watr, grss
+      )
+    ),
+    new Array(
+      "One that shares my personal goals is best.",
+      new Array(
+        elct, rock, ghst, fire
+      )
+    ),
+    new Array(
+      "Whichever companion that will help me win matches.",
+      new Array(
+        figt, ice, grnd, posn
+      )
     )
   ),
-  
-)
 
-// var myQuestions = new Array ()
+  question[2] = new Array(
+    "What is your favorite food?",
+    new Array(
+      "Food is fuel, nothing more.",
+      new Array(
+        ghst, psyc, rock, stel
+      )
+    ),
+    new Array(
+      "Pizza!",
+      new Array(
+        elct, nrml, watr, drag
+      )
+    ),
+    new Array(
+      "Dessert!",
+      new Array(
+        posn, fire, bug, ice
+      )
+    ),
+    new Array(
+      "Anything high in protein.",
+      new Array(
+        figt, fly, grnd, grss
+      )
+    )
+  ),
 
-console.log(question[i])
+  question[3] = new Array(
+    "How do you deal with obstacles in life?",
+    new Array(
+      "I run into them headfirst.",
+      new Array(
+        nrml, figt, rock, grnd
+      )
+    ),
+    new Array(
+      "I tell my team what we can all do to overcome it.",
+      new Array(
+        drag, stel, watr, grss
+      )
+    ),
+    new Array(
+      "One that shares my personal goals is best.",
+      new Array(
+        elct, rock, ghst, fire
+      )
+    ),
+    new Array(
+      "Whichever companion that will help me win matches.",
+      new Array(
+        figt, ice, grnd, posn
+      )
+    )
+  ),
 
-// {
-//   question: "You are in a group, traveling on a road when Team Rocket ambushes you to steal your pokemon. What do you do?",
-//   index: 0,
+  // var myQuestions = new Array ()
 
-//   answers: [
-//     {
-//       message: "Tell everyone to spread out, while you go after the leader.",
-//       type: ["Water", "Dragon", "Steel", "Fighting"]
-//     },
-//     {
-//       message: "Focus on the closest enemy. Once you defeat them, you'll deal with the others.",
-//       type: ["Fire", "Electric", "Rock", "Flying"]
-//     },
-//     {
-//       message: "Group up and work together. They can't take you all at once.",
-//       type: ["Ground", "Grass", "Normal", "Bug"]
-//     },
-//     {
-//       message: "Use the confusion to slip out of sight. Use stealth to your advantage.",
-//       type: ["Ghost", "Poison", "Psych", "Ice"]
-//     },
-//   ]
-
+  console.log(question[i])
 
 //Display quiz from array when user presses start
 function buildQuiz() {
@@ -121,43 +175,51 @@ function buildQuiz() {
   answerD.addEventListener('click', answerCheck)
 }
 
-
-
 function answerCheck() {
 
   if (this.id === "answerA") {
-    question[i][1][1][0]+=4
-    question[i][1][1][1]+=3
-    question[i][1][1][2]+=2
-    question[i][1][1][3]+=1
-    console.log([bug,drag,elct,figt,fire,fly,ghst,grss,grnd,ice,nrml,posn,psyc,rock,watr,stel])
+    userChoices = userChoices.concat(question[i][1][1])
+    console.log(question[i][1][1])
+    console.log(userChoices)
   } else if (this.id === "answerB") {
-    answerScoreB++
+    userChoices = userChoices.concat(question[i][2][1])
+    console.log(question[i][2][1])
+    console.log(userChoices)
   } else if (this.id === "answerC") {
-    answerScoreC++
+    userChoices = userChoices.concat(question[i][3][1])
+    console.log(question[i][3][1])
+    console.log(userChoices)
   } else if (this.id === "answerD") {
-    answerScoreD++
-  }
-  
+    userChoices = userChoices.concat(question[i][4][1])
+    console.log(question[i][4][1])
+    console.log(userChoices)
+  };
+
+  findMax(userChoices)
+
   i++;
   buildQuiz()
-  
-  // } else if (answerScoreA == 4) {
-  //   callResult("type/3")
-  // } else if (answerScoreB == 4) {
-  //   callResult(answerScoreB)
-  // } else if (answerScoreC == 4) {
-  //   callResult(answerScoreC)
-  // } else {
-  //   callResult(answerScoreD)
-  // }
 }
 
-function callResult(hello) {
-  console.log(hello)
+function findMax(arr1) {
+  var mf = 1;
+  var m = 0;
+  var item;
+  for (var i = 0; i < arr1.length; i++) {
+    for (var j = i; j < arr1.length; j++) {
+      if (arr1[i] == arr1[j])
+        m++;
+      if (mf < m) {
+        mf = m;
+        item = arr1[i];
+      }
+    }
+    m = 0;
+  }
+  console.log(item + " ( " + mf + " times ) ");
 }
 
-//when user clicks start, the timer starts and quiz is built
+
 btn.onclick = function hideStart() {
   startScreen.setAttribute("class", "hidden")
   subLine.setAttribute("class", "hidden")
