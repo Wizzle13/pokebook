@@ -4,6 +4,7 @@
 
   ![Open Issues](https://img.shields.io/github/issues-raw/Wizzle13/pokebook?style=plastic)
   ![Pull Request](https://img.shields.io/github/issues-pr/Wizzle13/pokebook?style=plastic)
+  ![Last Commit](https://img.shields.io/github/last-commit/wizzle13/pokebook?style=plastic)
   ## Description
   A new social media site for Pokemon lovers, where you can connect with other Pokemon lovers and share messages.
 
