@@ -1,3 +1,7 @@
 .hidden{
 	display: none;
 }
+
+.professorOak{
+	max-height: 10px;
+}

@@ -110,7 +110,7 @@ question[0] = new Array(
       )
     ),
     new Array(
-      "Anything high in protein.",
+      "Something wholesome and healthy.",
       new Array(
         figt, fly, grnd, grss
       )
@@ -176,7 +176,7 @@ question[0] = new Array(
     new Array(
       "Play video games.",
       new Array(
-        stel, nrml, elct, grnd
+        stel, nrml, elct, bug
       )
     ),
     new Array(
@@ -194,7 +194,7 @@ question[0] = new Array(
     new Array(
       "Stay in and read a book.",
       new Array(
-        bug, ghst, rock, ice
+        grnd, ghst, rock, ice
       )
     )
   ),
@@ -215,13 +215,13 @@ question[0] = new Array(
     new Array(
       "Surrender the match. My pokemon do not deserve this treatment.",
       new Array(
-        fly, grss, posn, psyc
+        fly, grss, elct, psyc
       )
     ),
     new Array(
       "Stick to defensive abilities and get the team's stats up while we wait for an opening.",
       new Array(
-        bug, ghst, watr, elct
+        bug, ghst, watr, posn
       )
     )
   ),
@@ -361,11 +361,13 @@ function findMax(arr1) {
 function showResults(item) {
   const endScreen = document.getElementById('endScreen')
   const pokemonType = document.getElementById('pokemonType')
+  const typeDescription = document.getElementById('typeDescription')
 
   quizContainer.setAttribute('class', 'hidden')
   endScreen.removeAttribute('class', 'hidden')
 
   if (item == 1) {
+    typeDescription.innerText = "A strategic, team player. You are always looking for the next fast paced interaction."
     pokemonType.innerText = " Bug"
     var choice = [
       "scyther",
@@ -373,6 +375,7 @@ function showResults(item) {
       "caterpie"
     ]
   } else if (item == 2) {
+    typeDescription.innerText = "A courageous leader and fierce fighter. You never shy away from a chance at adventure."
     pokemonType.innerText = " Dragon"
     var choice = [
       "dragonair",
@@ -380,6 +383,7 @@ function showResults(item) {
       "gible"
     ]
   } else if (item == 3) {
+    typeDescription.innerText = "Equal parts focused and chaotic. When you're charged up, it is truly a spectacle."
     pokemonType.innerText = " Electric"
     var choice = [
       "pikachu",
@@ -387,6 +391,7 @@ function showResults(item) {
       "jolteon"
     ]
   } else if (item == 4) {
+    typeDescription.innerText = "Powerful and headstrong. You lead your team through sheer force of will."
     pokemonType.innerText = " Fighting"
     var choice = [
       "machoke",
@@ -394,6 +399,7 @@ function showResults(item) {
       "hitmonchan"
     ]
   } else if (item == 5) {
+    typeDescription.innerText = "Emotionally powerful and focused. Your inner flame drives you to greatness."
     pokemonType.innerText = " Fire"
     var choice = [
       "ninetales",
@@ -401,6 +407,7 @@ function showResults(item) {
       "cyndaquil"
     ]
   } else if (item == 6) {
+    typeDescription.innerText = "Adventurous and laser accurate. You take the high ground in fighting and in life."
     pokemonType.innerText = " Flying"
     var choice = [
       "pidgeotto",
@@ -408,6 +415,7 @@ function showResults(item) {
       "mantine"
     ]
   } else if (item == 7) {
+    typeDescription.innerText = "Mysterious and driven. Anyone who finds themselves at odds with you is right to fear the dark."
     pokemonType.innerText = " Ghost"
     var choice = [
       "banette",
@@ -415,6 +423,7 @@ function showResults(item) {
       "drifloon"
     ]
   } else if (item == 8) {
+    typeDescription.innerText = "Leadership is a delicate balance. You surround yourself with an ecosystem of trustworthiness."
     pokemonType.innerText = " Grass"
     var choice = [
       "ivysaur",
@@ -422,6 +431,7 @@ function showResults(item) {
       "bellossom"
     ]
   } else if (item == 9) {
+    typeDescription.innerText = "Stable and hardy. You are the strength others look to in hard times."
     pokemonType.innerText = " Ground"
     var choice = [
       "cubone",
@@ -429,6 +439,7 @@ function showResults(item) {
       "rhyhorn"
     ]
   } else if (item == 10) {
+    typeDescription.innerText = "Cold and elusive. Your coolheaded nature gets you through any situation"
     pokemonType.innerText = " Ice"
     var choice = [
       "swinub",
@@ -436,6 +447,7 @@ function showResults(item) {
       "walrein"
     ]
   } else if (item == 11) {
+    typeDescription.innerText = "Friendship, bravery and strength define you. You will always be there for your team."
     pokemonType.innerText = " Normal"
     var choice = [
       "meowth",
@@ -443,6 +455,7 @@ function showResults(item) {
       "snorlax"
     ]
   } else if (item == 12) {
+    typeDescription.innerText = "Quiet and strategic. Your adversaries will never know what hit them."
     pokemonType.innerText = " Poison"
     var choice = [
       "arbok",
@@ -450,6 +463,7 @@ function showResults(item) {
       "muk"
     ]
   } else if (item == 13) {
+    typeDescription.innerText = "Patient and methodical. You master your mind and see through any challenge"
     pokemonType.innerText = " Psychic"
     var choice = [
       "abra",
@@ -457,6 +471,7 @@ function showResults(item) {
       "mewtwo"
     ]
   } else if (item == 14) {
+    typeDescription.innerText = "Tough and focused. Your team can stand the test of time."
     pokemonType.innerText = " Rock"
     var choice = [
       "geodude",
@@ -464,6 +479,7 @@ function showResults(item) {
       "aerodactyl"
     ]
   } else if (item == 15) {
+    typeDescription.innerText = "Adaptable and courageous. Your team will turn the tide on any competitors."
     pokemonType.innerText = " Water"
     var choice = [
       "squirtle",
@@ -471,6 +487,7 @@ function showResults(item) {
       "starmie"
     ]
   } else if (item == 16) {
+    typeDescription.innerText = "Rare and mysterious. The hottest furnaces forge the strongest wills."
     pokemonType.innerText = " Steel"
     var choice = [
       "steelix",
@@ -512,10 +529,29 @@ function fetchPokemon(choice) {
       pokemonSprite3.innerHTML = `<img src="${pokeInfo3.sprites.front_default}" alt="pokemon3">`
     })
   })
+
+  anime({
+    targets: '.wobble',
+    keyframes:[
+    {translateY: -25},
+    {translateY: 0}
+    ],
+    duration: 2000,
+    loop: true,
+    easing: 'easeInOutSine',
+    // direction: 'alternate',
+    delay: anime.stagger(500)
+
+  });
+  
+  var choosePrompt = document.getElementById('choosePrompt')
+
+  anime({
+    targets: '.professorOak',
+    translateY: 500,
+    scale: 100,
+  })
 }
-// pokemonSprite.innerHTML = `<img src="${fetch1.sprites}" alt="pokemon1"> <img src="${fetch2.sprites}" alt="pokemon2"> <img src="${fetch3.sprites}" alt="pokemon3">`
-
-
 
 btn.onclick = function hideStart() {
   startScreen.setAttribute("class", "hidden")
