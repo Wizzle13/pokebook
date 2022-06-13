@@ -36,12 +36,14 @@
 
                     <div id="quizContainer" class="hidden"></div>
 
-                    <div id="scoreSaver" class="hidden">
-                        <h2 class="text-center mb-3">Game Over</h2>
-                        <p>Please type your initials here:</p>
-                        <input type="text" style="text-transform: uppercase;" maxlength="2" id="initials"></input> <button class="btn-success rounded" id="initialsBtn">Submit</button>
-                        <p class="hidden" id="initialsWarning">Too short</p>
-                        <div id="currentScore"></div>
+                    <div id="endScreen" class="hidden">
+                        <h2 class="text-center mb-3">Results are in!</h2>
+                        <p>Your personality type is:<span id="pokemonType"></span></p>
+                        <div>
+                            <div id="pokemonSprite1"></div>
+                            <div id="pokemonSprite2"></div>
+                            <div id="pokemonSprite3"></div>
+                        </div>
                     </div>
                 </div>
 
