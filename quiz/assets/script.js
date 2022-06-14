@@ -543,8 +543,6 @@ function fetchPokemon(choice) {
     delay: anime.stagger(500)
 
   });
-  
-  var choosePrompt = document.getElementById('choosePrompt')
 
   anime({
     targets: '.professorOak',

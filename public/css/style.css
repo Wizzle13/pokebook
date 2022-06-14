@@ -1,9 +1,9 @@
 main {
-    background-image: url("/images/Poké_Ball_icon.svg.png");
+    background-image: url("../images/poke-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 1000px;
     display: flex;
     justify-content: center;
 }
