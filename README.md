@@ -49,7 +49,7 @@ Contributers will push to feature branches and enter pull requests to push to de
 
 Founding Contributers:
 
-Cameron Cole
+* Cameron Cole
 
 Derek Madderom
 
