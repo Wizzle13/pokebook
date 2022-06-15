@@ -512,21 +512,21 @@ function fetchPokemon(choice) {
     response.json().then(function (pokeInfo1) {
       console.log(pokeInfo1.id);
 
-      pokemonSprite1.innerHTML = `<img src="${pokeInfo1.sprites.front_default}" alt="pokemon1">`
+      pokemonSprite1.innerHTML = `<button type="button" class="btn btn-light col-lg-2 m-5 wobble pokemonSprite1" value="${pokeInfo1.id}"><img src="${pokeInfo1.sprites.front_default}" alt="pokemon1"></button>`
     })
   })
   fetch(pokeAPI2).then(function (response) {
     response.json().then(function (pokeInfo2) {
       console.log(pokeInfo2.id);
 
-      pokemonSprite2.innerHTML = `<img src="${pokeInfo2.sprites.front_default}" alt="pokemon2">`
+      pokemonSprite2.innerHTML = `<button type="button" class="btn btn-light col-lg-2 m-5 wobble pokemonSprite2" value="${pokeInfo2.id}"><img src="${pokeInfo2.sprites.front_default}" alt="pokemon2"></button>`
     })
   })
   fetch(pokeAPI3).then(function (response) {
     response.json().then(function (pokeInfo3) {
       console.log(pokeInfo3.id);
 
-      pokemonSprite3.innerHTML = `<img src="${pokeInfo3.sprites.front_default}" alt="pokemon3">`
+      pokemonSprite3.innerHTML = `<button type="button" class="btn btn-light col-lg-2 m-5 wobble pokemonSprite3" value="${pokeInfo3.id}"><img src="${pokeInfo3.sprites.front_default}" alt="pokemon3"></button>`
     })
   })
 

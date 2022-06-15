@@ -18,10 +18,10 @@ async function signupFormHandler(event) {
          // check the response status
         if (response.ok) {
           document.location.replace('/quiz');
-          console.log("ok");
+          
         } else {
            alert(response.statusText);
-           console.log("nope");
+           
         }
     };
 };
