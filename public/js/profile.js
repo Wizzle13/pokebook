@@ -44,10 +44,8 @@ function insertRed() {
   })
 
   anime({
-    targets: gameboy,
-    translateY: 300,
-    translateX: -150,
-    scale: 4,
+    translateY: 5000,
+    scale: 100,
     delay: 2000,
     duration: 2000
   })
