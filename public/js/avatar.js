@@ -19,21 +19,22 @@ function sprite3() {
 async function spriteHandler(sprite) { 
     console.log("sprite ID:" + sprite )
       if (sprite) {
-        //   const response = await fetch('/api/users', {
-        //     method: 'put',
-        //     body: JSON.stringify({
-        //       sprite
-        //     }),
-        //     headers: { 'Content-Type': 'application/json' }
-        //   });
-           // check the response status
-        //   if (response.ok) {
+          const response = await fetch('/api/users/', {
+            method: 'put',
+            body: JSON.stringify({
+              sprite
+            }),
+            headers: { 'Content-Type': 'application/json' }
+          });
+        //    check the response status
+          if (response.ok) {
             document.location.replace('/dashboard');
             
-        //   } else {
-        //      alert(response.statusText);
+          } else {
+            
+             alert(response.statusText);
              
-        //   }
+          }
       };
   };
 
