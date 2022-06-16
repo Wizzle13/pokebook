@@ -530,6 +530,7 @@ function fetchPokemon(choice) {
     })
   })
 
+
   anime({
     targets: '.wobble',
     keyframes:[
@@ -547,6 +548,7 @@ function fetchPokemon(choice) {
   anime({
     targets: '.professorOak',
     translateY: 500,
+    translateX: 150,
     scale: 100,
   })
 }
