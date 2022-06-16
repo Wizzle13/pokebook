@@ -14,6 +14,7 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=plastic&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=plastic&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=plastic&logo=Javascript&logoColor=white)
+![Handlebars.js](https://img.shields.io/badge/Handlebars.js-000000?plastic&logo=handlebars.js&logoColor=white)
 
 ##### Backend:
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=plastic&logo=heroku&logoColor=white)
@@ -28,7 +29,7 @@
 ![npm bcrypt](https://img.shields.io/npm/v/bcrypt?label=bcrypt&style=plastic)
 ![npm express-handlebars](https://img.shields.io/npm/v/express-handlebars?label=express-handlebars&style=plastic)
 ![npm express-session](https://img.shields.io/npm/v/express-session?label=express-session&style=plastic)
-
+![connect-session-sequelize](https://img.shields.io/npm/v/connect-session-sequelize?label=connect-session-sequelize&style=plastic)
 
   ## Table of Contents
   
@@ -49,7 +50,7 @@ Contributers will push to feature branches and enter pull requests to push to de
 
 Founding Contributers:
 
-* Cameron Cole
+Cameron Cole
 
 Derek Madderom
 
