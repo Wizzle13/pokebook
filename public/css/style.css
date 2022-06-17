@@ -1,11 +1,18 @@
 main {
-    background-image: url("/images/Poké_Ball_icon.svg.png");
+    background-image: url("../images/gray-screen-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 1000px;
     display: flex;
     justify-content: center;
+}
+.otherBg{
+    background-image: url('../images/poke-background.jpg');
+    width: 500px;
+}
+.poke-background {
+    width: 50%;
 }
 
 form {
@@ -15,14 +22,16 @@ form {
     align-items: center;
 }
 
-.login, .signup-form {
+.login,
+.signup-form {
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#sign-name, #sign-email {
+#sign-name,
+#sign-email {
     padding: 10px;
     border-radius: 5px;
 }
@@ -41,6 +50,47 @@ form {
     padding: 10px;
 }
 
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.hidden{
+	display: none;
+}
+
+.professorOak{
+	max-height: 10px;
+}
+
+.gameboy{
+    position: absolute;
+  left: 0px;
+  top: 250px;
+  z-index: 2;
+}
+
+
 .new-account-btn a {
     color: white;
     text-decoration: none;
@@ -57,3 +107,4 @@ form {
     color: white;
     text-decoration: none;
 }
+
