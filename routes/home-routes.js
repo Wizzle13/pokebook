@@ -11,10 +11,17 @@ router.get('/signup', (req, res) => {
 
 router.get('/profile', (req, res) => {
   res.render('profile')
+  
 })
 
 
 router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('profile');
+    return;
+  }
+
+  
   res.render('login');
 });
 

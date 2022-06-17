@@ -25,7 +25,7 @@ router.post('/', (req,res) => {
     UserMessages.create({
         messages: req.body.messages,
         user_id: req.body.user_id
-        //req.session.user_id
+        // req.session.user_id
     })
     .then(dbMessageData => res.json(dbMessageData))
     .catch(err => {
