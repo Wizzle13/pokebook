@@ -35,6 +35,10 @@ User.init(
         validate: {
           len: [4]
         }
+      },
+      sprite: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
       }
     },
     {

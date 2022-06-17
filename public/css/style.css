@@ -43,8 +43,13 @@ form {
 }
 
 .new-account-btn {
+    border-style: solid;
+    border-color: rgb(114,114,114);
+    border-radius: 5px;
+    background-color: rgb(79,79,79);
     padding: 10px;
 }
+
 
 .topnav {
     overflow: hidden;
@@ -83,5 +88,23 @@ form {
   left: 0px;
   top: 250px;
   z-index: 2;
+}
+
+
+.new-account-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.back-to-login {
+    border-style: solid;
+    border-color: rgb(114,114,114);
+    border-radius: 5px;
+    background-color: rgb(79,79,79);
+}
+
+.back-to-login a {
+    color: white;
+    text-decoration: none;
 }
 
