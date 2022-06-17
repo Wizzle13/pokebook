@@ -31,23 +31,11 @@ form {
 }
 
 #sign-name,
-#sign-email {
-    padding: 10px;
-    border-radius: 5px;
-}
-
+#sign-email,
 #sign-pwd {
     padding: 10px;
     border-radius: 5px;
-    margin: 5px 0 5px 0;
-}
-
-.new-account-btn {
-    border-style: solid;
-    border-color: rgb(114,114,114);
-    border-radius: 5px;
-    background-color: rgb(79,79,79);
-    padding: 10px;
+    margin: 3px 0 3px 0;
 }
 
 
@@ -90,6 +78,13 @@ form {
   z-index: 2;
 }
 
+.new-account-btn {
+    border-style: solid;
+    border-color: rgb(114,114,114);
+    border-radius: 5px;
+    background-color: rgb(79,79,79);
+    padding: 8px;
+}
 
 .new-account-btn a {
     color: white;
@@ -101,6 +96,7 @@ form {
     border-color: rgb(114,114,114);
     border-radius: 5px;
     background-color: rgb(79,79,79);
+    padding: 8px;
 }
 
 .back-to-login a {
