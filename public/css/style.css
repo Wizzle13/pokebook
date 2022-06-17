@@ -104,3 +104,40 @@ form {
     text-decoration: none;
 }
 
+.dashB-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(200,200,200);
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    padding: 20px 20px 0px 20px;
+    color: white;
+    transition: all 5s linear;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    display: flex;
+    padding: 40px 20px 0px 20px;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+header nav ul li a:hover {
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    transition: all 1s linear;
+}

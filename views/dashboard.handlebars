@@ -1,21 +1,11 @@
-<section class="container">
-  <div class="row">
-    
-  </div>
-  <div class="row">
-  
+<section class="dashB-container">
   {{!-- <h2>Create New Post</h2> --}}
 
-  <form class="new-post-form">
-    
-
-    <div>
+    <form class="new-post-form">
       <label for="post-message">Message</label>
       <textarea rows="6" cols="50" id="post-massage" name="post-massage" ></textarea>
-
-    </div>
-    <button type="submit" class="btn-dark rounded col">Create</button>
-  </form>
+      <button type="submit" class="btn-dark rounded col">Create</button>
+    </form>
 </section>
 
 {{#if posts.length}}
@@ -29,7 +19,6 @@
     </li>
     {{/each}}
   </ol>
-</div>
 </section>
 {{/if}}
 
