@@ -1,13 +1,20 @@
-<section>
-  <h2>Create New Post</h2>
+<section class="container">
+  <div class="row">
+    <h1>hello</h1>
+  </div>
+  <div class="row">
+  
+  {{!-- <h2>Create New Post</h2> --}}
 
   <form class="new-post-form">
     
+
     <div>
       <label for="post-message">Message</label>
       <textarea rows="6" cols="50" id="post-massage" name="post-massage" ></textarea>
+
     </div>
-    <button type="submit" class="btn">Create</button>
+    <button type="submit" class="btn-dark rounded col">Create</button>
   </form>
 </section>
 
@@ -22,6 +29,7 @@
     </li>
     {{/each}}
   </ol>
+</div>
 </section>
 {{/if}}
 
