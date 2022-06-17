@@ -3,6 +3,7 @@ function sprite1() {
 
     const sprite = document.querySelector('.pokemonSprite1').value.trim();
     console.log("sprite ID:" + sprite )
+    spriteHandler(sprite)
 }
 function sprite2() {
 
@@ -14,6 +15,7 @@ function sprite3() {
 
     const sprite = document.querySelector('.pokemonSprite3').value.trim();
     console.log("sprite ID:" + sprite )
+    spriteHandler(sprite)
 }
 
 async function spriteHandler(sprite) { 
