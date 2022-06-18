@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <title>Pok&#233mon Personality Quiz</title>
+    <style>
+        body {
+            background-image: url('./assets/images/poke-background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="min-vh-100 d-flex align-items-center m-5">
+
+        <section class="w-100 row justify-content-center">
+            
+
+            <div class="col-10 col-md-6 col-lg-5 bg-dark rounded p-5 containerPad">
+
+                <h1 class="display-3 text-center text-black bg-white rounded mb-5 font-weight-bold">Pok&#233mon Personality Quiz</h1>
+
+                <p id="subLine" class="text-center text-black bg-white rounded h3 mb-5">Which Pok&#233mon are you?</p>
+
+                <div class="bg-white my-4 p-4 rounded">
+                    <!-- What the user sees on page load -->
+                    <header>
+                    </header>
+
+                    <div id="startScreen">
+                        <h2 class="text-center mb-3">When you are prepared, Press Start.</h2>
+                        <button id="btn" class="btn-block btn-danger">Start</button>
+                    </div>
+
+                    <div id="quizContainer" class="hidden"></div>
+
+                    <div id="endScreen" class="hidden">
+                        <h2 class="text-center mb-3" id="typeDescription"></h2>
+                        <h2 class="text-center">Your personality type is:<span class="h2" id="pokemonType"></span></h2>
+                        <h3 class="text-center">Choose your Avatar:</h3>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn-light col-lg-2 m-5 wobble"
+                                    id="pokemonSprite1"></button>
+                                <button type="button" class="btn btn-light col-lg-2 m-5 wobble"
+                                    id="pokemonSprite2"></button>
+                                <button type="button" class="btn btn-light col-lg-2 m-5 wobble"
+                                    id="pokemonSprite3"></button>
+                            </div>
+                            <div class="row justify-content-center">
+                                <img src="./assets/images/poketable.png" class="mw-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="mh-100">
+                
+                <img src="./assets/images/professoroak.png" alt="Professor Oak" class="ml-5 professorOak">
+             </div>   
+             
+        </section>
+
+    </div>
+    
+    <script src="./assets/anime.min.js"></script>
+    <script src="./assets/script.js"></script>
+    <script src="../js/avatar.js"></script>
+</body>
+
+</html>
