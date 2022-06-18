@@ -24,7 +24,7 @@ router.get('/', (req,res) => {
 // Post new message
 router.post('/', withAuth, (req,res) => {
     UserMessages.create({
-        messages: req.body.messages,
+        messages: req.body.post_messages,
         user_id: req.session.user_id
         //req.session.user_id
     })
