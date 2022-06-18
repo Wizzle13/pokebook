@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { UserMessages } = require('../../models');
 const sequelize = require('../../config/connection');
+const withAuth = require('../../utils/auth');
 
 // Get all messages
 router.get('/', (req,res) => {
@@ -21,11 +22,11 @@ router.get('/', (req,res) => {
 });
 
 // Post new message
-router.post('/', (req,res) => {
+router.post('/', withAuth, (req,res) => {
     UserMessages.create({
-        messages: req.body.messages,
-        user_id: req.body.user_id
-        //req.session.user_id
+        messages: req.body.post_message,
+        user_id: req.session.user_id
+        
     })
     .then(dbMessageData => res.json(dbMessageData))
     .catch(err => {

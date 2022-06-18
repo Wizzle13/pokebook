@@ -28,7 +28,7 @@ async function spriteHandler(sprite) {
           });
         //    check the response status
           if (response.ok) {
-            document.location.replace('/dashboard');
+            document.location.replace('/profile');
             
           } else {
             
