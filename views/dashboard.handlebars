@@ -1,14 +1,15 @@
-<section>
-  <h2>Create New Post</h2>
+<section class="dashB-container">
+  {{!-- <h2>Create New Post</h2> --}}
 
-  <form class="new-post-form">
-    
-    <div>
-      <label for="post-message">Message</label>
-      <textarea rows="6" cols="50" id="post-message" name="post-message" ></textarea>
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
+    <form class="new-post-form">
+      <div>
+        <label for="post-message">Message</label>
+      </div>
+      <div>  
+        <textarea rows="6" cols="50" id="post-massage" name="post-massage" ></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark rounded col">Create</button>
+    </form>
 </section>
 
 {{#if posts.length}}
@@ -18,7 +19,7 @@
     {{#each posts as |post|}}
     <li>
       {{> messages post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      {{!-- <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a> --}}
     </li>
     {{/each}}
   </ol>

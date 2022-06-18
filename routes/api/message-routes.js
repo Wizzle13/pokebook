@@ -24,9 +24,9 @@ router.get('/', (req,res) => {
 // Post new message
 router.post('/', withAuth, (req,res) => {
     UserMessages.create({
-        messages: req.body.post_messages,
+        messages: req.body.post_message,
         user_id: req.session.user_id
-        //req.session.user_id
+        
     })
     .then(dbMessageData => res.json(dbMessageData))
     .catch(err => {
